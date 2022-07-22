@@ -1,5 +1,5 @@
 const app = require('./src/app');
-const PORT = 7474;
+const PORT = process.env.PORT;
 
 
 app.listen(PORT, () => console.log(`Subindo o servidor na porta ${PORT}`));
