@@ -40,3 +40,78 @@ Para o cadastro do profissional serão necessários os dados seguir:
 - Se já concluiu o curso
 - Se não concluiu, qual semestre está cursando
 - Mensagem de que a equipe entrará em contato
+
+## 📚 Aprendizados
+
+O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRIAR), READ(LER-CONSULTA), UPDATE(ATUALIZAR) e DELETE(DESTRUIÇÃO). 
+
+## ⚙️ Funcionalidades/Objetivos
+
+- Listar todos os pacientes que estão cadastrados no sistema;
+- Cadastrar os pacientes no sistema;
+- Atualizar os dados desse paciente no sistema;
+- Deletar o cadastro desse paciente do sistema;
+
+## 🛠️ Tecnologias utilizadas nesse projeto
+
+- [JavaScript](https://www.javascript.com/)
+- [Git/Github](https://github.com/)
+- [Node.js](https://nodejs.org/en/)
+- [MongoDb](https://www.mongodb.com/)
+- [MongoCompass](https://www.mongodb.com/pt-br/products/compass)
+- [MongoDBatlas](https://www.mongodb.com/cloud/atlas)
+- [Postman](https://www.postman.com/)
+- [Vscode](https://code.visualstudio.com/)
+- [heroku](https://dashboard.heroku.com/apps) 
+
+### Pacotes Utilizados 
+
+- [Express](https://expressjs.com/pt-br/)
+- [Nodemon](https://nodemon.io/)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [Mongoose](https://mongoosejs.com/)
+- [cors](https://www.npmjs.com/package/cors)
+
+## 📁 Arquitetura MVC 
+
+```
+ 📁 MEU-PSICANALISTA-VIRTUAL
+   |
+   |-  📁 src
+   |    |
+   |    |- 📁 controller
+   |         |- 📑 pacienteController.js
+   |     
+   |
+   |    |- 📁 database
+   |         |- 📑 mongoConfig.js
+   |
+   |
+   |
+   |    |- 📁 models
+   |         |- 📑 pacienteSchema.js
+   |         
+   |
+   |    |- 📁 routes
+   |         |- 📑 pacienteRoutes.js 
+   |
+   |    |- 📑 app.js
+   |
+   |
+   |- 📑 .env
+   |- 📑 .env.example
+   |- 📑 .gitignore
+   |- 📑 package-lock.json
+   |- 📑 package.json
+   |- 📑 README.md
+   |- 📑 server.js
+```
+
+## 🔃 Rotas
+
+* local: http://localhost:9090
+
+* Heroku: https://meu-psicanalista-virtual.herokuapp.com/
+
+    * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
+
