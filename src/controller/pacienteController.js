@@ -63,9 +63,21 @@ const atualizarPaciente = async (request, response) => {
 }
 
 
+const deletarPaciente = async (request, response) => {
+    const paciente = await Pacientes.findById(request.params.id);
+
+    await paciente.delete();
+
+    response.status(200).json({
+        "mensagem": "Cadastro deletado!"
+    })
+}
+
+
 module.exports = {
     listarPacientes,
     listarPacienteId,
     cadastrarPaciente,
-    atualizarPaciente
+    atualizarPaciente,
+    deletarPaciente
 }
