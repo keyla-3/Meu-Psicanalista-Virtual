@@ -36,7 +36,7 @@ const pacientesSchema = mongoose.Schema({
         default: 'manha',
         required: true
     }
-});
+}, { timestamps: true });
 
 
 module.exports = mongoose.model('paciente', pacientesSchema);
