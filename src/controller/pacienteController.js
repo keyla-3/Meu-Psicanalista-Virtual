@@ -38,9 +38,34 @@ const cadastrarPaciente = async (request, response) => {
     });
 }
 
+const atualizarPaciente = async (request, response) => {
+    const { nome, contato, email, dataNascimento, endereco, trabalhoStatus, horarioAtendimento } = request.body;
+
+    const paciente = await Pacientes.findById(request.params.id);
+
+    if(paciente) {
+        paciente.nome = nome || paciente.nome
+        paciente.contato = contato || paciente.contato
+        paciente.email = email || paciente.email
+        paciente.dataNascimento = dataNascimento || paciente.dataNascimento
+        paciente.endereco = endereco || paciente.endereco
+        paciente.trabalhoStatus = trabalhoStatus || paciente.trabalhoStatus
+        paciente.horarioAtendimento = horarioAtendimento || paciente.horarioAtendimento
+
+
+        const atualizarPaciente = await paciente.save();
+
+        response.status(200).json({
+            "mensagem": "Atualização feita com sucesso.",
+            atualizarPaciente
+        });
+    }
+}
+
 
 module.exports = {
     listarPacientes,
     listarPacienteId,
-    cadastrarPaciente
+    cadastrarPaciente,
+    atualizarPaciente
 }
