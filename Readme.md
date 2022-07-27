@@ -115,3 +115,25 @@ O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRI
 
     * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
 
+
+## 🔃 Retorna a apresentação: 
+
+| Método HTTP  | Endpoint   |                      Descrição                            |
+| ------------ | ---------------------------- | ------------------------------------ |
+| GET          | `https://meu-psicanalista-virtual.herokuapp.com/`     |  Mensagem de apresentação (Index)    |   
+
+## 🔃 Manipulação das Rotas de Pacientes:
+
+| Método HTTP  | Endpoint                    | Descrição                            |
+| ------------ | ------------------------    | ------------------------------------ |
+| GET          | `/pacientes/listar`         | Retorna todos os pacientes           |
+| GET          | `/pacientes/listar/:id`     | Retorna paciente por id              |
+| POST         | `/pacientes/cadastrar`      | Cria/cadastra um novo paciente       |
+| PUT          | `/pacientes/atualizar/:id`  | Altera informações de um paciente    |
+| DELETE       | `/pacientes/deletar/:id`    | Deleta um paciente                   |
+
+## 🚧 Implementações futuras
+
+- Front end
+- Inserir meios de pagamento
+- Auto agendamento
