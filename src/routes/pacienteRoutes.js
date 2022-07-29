@@ -7,7 +7,7 @@ routes.get('/listar', pacientesController.listarPacientes);
 routes.get('/listar/:id', pacientesController.listarPacienteId);
 routes.post('/cadastrar', pacientesController.cadastrarPaciente);
 routes.put('/atualizar/:id', pacientesController.atualizarPaciente);
-routes.delete('/deletar', pacientesController.deletarPaciente);
+routes.delete('/deletar/:id', pacientesController.deletarPaciente);
 
 
 

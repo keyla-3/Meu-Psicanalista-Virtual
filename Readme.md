@@ -132,6 +132,31 @@ O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRI
 | PUT          | `/pacientes/atualizar/:id`  | Altera informações de um paciente    |
 | DELETE       | `/pacientes/deletar/:id`    | Deleta um paciente                   |
 
+### Gif da Rota GET:
+
+<img src="./assets/getListar.gif"/>
+
+
+### Gif da Rota GET por ID:
+
+<img src="./assets/listarId.gif"/>
+
+
+### Gif da Rota POST:
+
+<img src="./assets/postCadastrar.gif"/>
+
+
+### Gif da Rota PUT:
+
+<img src="./assets/putAtualizar.gif"/>
+
+
+### Gif da Rota DELETE:
+
+<img src="./assets/deleteDeletar.gif"/>
+
+
 ## 🚧 Implementações futuras
 
 - Front end
